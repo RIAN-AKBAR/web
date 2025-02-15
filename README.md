@@ -66,7 +66,8 @@
             <button type="submit">Masuk</button>  
         </form>  
         <p id="error-message" class="error-message"></p>  
-    </div>  
+    </div> 
+</body> 
     <script>  
         document.getElementById('loginForm').addEventListener('submit', function(event) {  
             event.preventDefault();  
@@ -83,6 +84,6 @@
             }  
         });  
     </script>  
-</body>  
+ 
 
 </html>
