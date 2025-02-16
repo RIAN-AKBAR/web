@@ -65,3 +65,18 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
   
   addTaskBtn.addEventListener("click", addTask);  
   renderTasks(); 
+//login
+ document.getElementById('loginForm').addEventListener('submit', function(event) {  
+            event.preventDefault();  
+            const username = document.getElementById('username').value;  
+            const password = document.getElementById('password').value;  
+            // Gantilah ini dengan username dan password yang diinginkan  
+            const validUsername = 'rian';  
+            const validPassword = '032008';  
+            if (username === validUsername && password === validPassword) {  
+                // Redirect ke halaman baru  
+                window.location.href = 'dasbor.html'; // Ganti dengan halaman yang ingin dituju  
+            } else {  
+                document.getElementById('error-message').innerText = 'Username atau password salah';  
+            }  
+        });  
